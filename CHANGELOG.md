@@ -28,6 +28,9 @@ an `[Unreleased]` section that still holds only the empty `### Added` /
 
 ### Changed
 
+- `release.yml` builds and publishes to PyPI through the shared
+  `poetry-publish-pypi.yml` reusable workflow
+
 ### Fixed
 
 ## [0.2.1] - 2026-10-01
