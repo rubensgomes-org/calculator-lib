@@ -3,7 +3,7 @@
 # Therefor, I had to add "-rubens" to the name below.
 name = "calculator-lib-rubens"
 keywords = ["math", "calculator", "utility"]
-version = "0.2.1"
+version = "0.2.2"
 description = "A python calculator library."
 authors = [
     {name = "Rubens Gomes",email = "rubens.s.gomes@gmail.com"}
