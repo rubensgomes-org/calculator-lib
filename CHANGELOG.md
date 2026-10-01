@@ -5,7 +5,61 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## How this file is used
+
+`.github/workflows/release.yml` extracts the section matching the version
+being released and uses it verbatim as the GitHub Release notes. An empty or
+missing section fails the run, so the section must exist before the release
+is cut.
+
+The order is:
+
+1. Write what changed under `[Unreleased]`, commit, and push to `main`.
+2. Run the `Release to PyPI` workflow.
+
+It renames `[Unreleased]` to the version being released, adds a fresh empty
+`[Unreleased]` above it, and pushes that change to `main` itself. It rejects
+an `[Unreleased]` section that still holds only the empty `### Added` /
+`### Changed` / `### Fixed` skeleton, since there is nothing to rename.
+
 ## [Unreleased]
+
+### Added
+
+- GitHub Actions workflows: `build-verify.yml` (type checks, linting, tests,
+  SonarCloud quality gate) and `release.yml` (publishes to PyPI and creates
+  the GitHub Release)
+- Dependabot daily updates for Poetry dependencies and GitHub Actions
+- `scripts/initvars.sh` to provision the `PYPI_API_TOKEN` and `SONAR_TOKEN`
+  Actions secrets
+- `docs/RELEASE.md`, `docs/DEVELOPMENT_SETUP.md`, and `docs/PYCHARM.md`
+- `AI_DISCLAIMER.md`, `.flake8`, and `sonar-project.properties`
+- `flake8`, `pip-audit`, `poethepoet`, and `pysonar` dev dependencies, and a
+  `test` dependency group
+
+### Changed
+
+- Moved the AI notice from `LICENSE` to `AI_DISCLAIMER.md`; `LICENSE` is now
+  the standard MIT License
+- Restructured `README.md` with badges, features, installation, and
+  documentation links
+- `pytest` now writes `coverage.xml` for SonarCloud
+- Updated build requirement to `poetry-core>=2.5`
+- Updated dev dependency minimums (`isort>=9.0.1`, `pylint>=4.0.8`,
+  `coverage>=7.16.0`) and regenerated `poetry.lock`
+- `.gitignore` now excludes IDE, secrets, Sonar, and `coverage.xml` files
+- `.pylintrc` now accepts `__main__` as a module name
+- `[project.urls]` now point to `github.com/rubensgomes-org/calculator-lib`
+- Updated classifiers to `Development Status :: 4 - Beta` and
+  `Programming Language :: Python :: 3.14`
+
+### Removed
+
+- Claude-driven release plans (`RELEASE.md`, `docs/release-plan-v*.md`,
+  `.claude/commands/release-plan.md`), replaced by `release.yml`
+- `CLAUDE.md`, `SETUP.md` (replaced by `docs/DEVELOPMENT_SETUP.md`),
+  `llms.txt`, and `scripts/test_github.sh`
+- Unused `httpx`, `pytest-asyncio`, and `types-pyyaml` dev dependencies
 
 ## [0.2.0] - 2026-08-19
 

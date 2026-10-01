@@ -1,15 +1,57 @@
-# Calculator-LIB
+# Calculator Library
+
+[![Python](https://img.shields.io/badge/Python-3.14%2B-0969da?logo=python)](https://www.python.org/downloads/release/python-3147/)
+[![Poetry](https://img.shields.io/badge/Poetry-2.5%2B-0969da?logo=poetry)](https://python-poetry.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-Actions-0969da?logo=github+actions)](https://github.com/features/actions)
+[![AI Assisted](https://img.shields.io/badge/AI%20Assisted-Development-d29922)](https://github.com/rubensgomes-org/calculator-lib/blob/main/AI_DISCLAIMER.md)
+[![License](https://img.shields.io/badge/License-MIT-0969da)](https://github.com/rubensgomes-org/calculator-lib/blob/main/LICENSE)
+
 
 A Python calculator library providing stateless arithmetic, power/root, modulo,
 rounding, and logarithmic/exponential operations.
 
-[![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+---
+
+## Features
+
+16 math calculator functions:
+
+- **Two-operand operations**: `add`, `subtract`, `multiply`, `divide`, `power`,
+  `nth_root`, `modulo`, `floor_divide`
+- **Single-operand operations**: `sqrt`, `absolute`, `floor`, `ceil`, `log10`,
+  `ln`, `exp`
+- **Rounding**: `round_number` (with configurable decimal places)
+
+## AI Disclaimer
+
+This project includes code and documentation created with the assistance of AI
+tools. For details on usage, limits, and review practices, please see the
+[AI Disclaimer](https://github.com/rubensgomes-org/calculator-lib/blob/main/AI_DISCLAIMER.md).
+
+## Prerequisites
+
+- python 3.14+
+- pip
 
 ## Installation
 
+1. Install in `pip` default installation folder
+
 ```bash
 pip install calculator-lib-rubens
+```
+
+2. Install in the Python user install directory
+
+```bash
+pip --no-cache-dir install -U --user calculator-lib-rubens
+```
+
+3. Confirm the installed version matches the latest GitHub release at
+   [calculator-lib/releases](https://github.com/rubensgomes-org/calculator-lib/releases)
+
+```bash
+pip show calculator-lib-rubens
 ```
 
 ## Quick Start
@@ -107,10 +149,16 @@ calc.nth_root(-4, 2)  # ValueError: Cannot take even root of a negative number
 calc.modulo(10, 0)  # ValueError: Cannot modulo by zero
 ```
 
-## Requirements
+## Documentation
 
-- Python 3.14+
+- [Development Setup](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/DEVELOPMENT_SETUP.md)
+- [PyCharm](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/PYCHARM.md)
+- [Release Process](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/RELEASE.md)
 
 ## License
 
-[Modified MIT](LICENSE)
+The project is licensed under
+[MIT License](https://github.com/rubensgomes-org/calculator-lib/blob/main/LICENSE).
+
+---
+Author: [Rubens Gomes](https://rubensgomes.com/)
