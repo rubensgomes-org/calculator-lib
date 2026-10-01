@@ -60,6 +60,8 @@ an `[Unreleased]` section that still holds only the empty `### Added` /
 - `[project.urls]` now point to `github.com/rubensgomes-org/calculator-lib`
 - Updated classifiers to `Development Status :: 4 - Beta` and
   `Programming Language :: Python :: 3.14`
+- `release.yml` now builds and publishes via the reusable
+  `poetry-publish-pypi.yml` workflow from `azure-workflows`
 
 ### Removed
 
