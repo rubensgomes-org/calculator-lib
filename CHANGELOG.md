@@ -26,6 +26,14 @@ an `[Unreleased]` section that still holds only the empty `### Added` /
 
 ### Added
 
+### Changed
+
+### Fixed
+
+## [0.2.1] - 2026-10-01
+
+### Added
+
 - GitHub Actions workflows: `build-verify.yml` (type checks, linting, tests,
   SonarCloud quality gate) and `release.yml` (publishes to PyPI and creates
   the GitHub Release)
