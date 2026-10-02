@@ -153,16 +153,17 @@ calc.nth_root(-4, 2)  # ValueError: Cannot take even root of a negative number
 calc.modulo(10, 0)  # ValueError: Cannot modulo by zero
 ```
 
-## Documentation
-
-- [Development Setup](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/DEVELOPMENT_SETUP.md)
-- [PyCharm](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/PYCHARM.md)
-- [Release Process](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/RELEASE.md)
-
 ## License
 
 This project is licensed under the
 [MIT License](https://github.com/rubensgomes-org/calculator-lib/blob/main/LICENSE).
+
+## Links
+
+- [GitHub Project](https://github.com/rubensgomes-org/calculator-lib)
+- [Development Setup](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/DEVELOPMENT_SETUP.md)
+- [PyCharm](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/PYCHARM.md)
+- [Release Process](https://github.com/rubensgomes-org/calculator-lib/blob/main/docs/RELEASE.md)
 
 ---
 Author: [Rubens Gomes](https://rubensgomes.com/)
