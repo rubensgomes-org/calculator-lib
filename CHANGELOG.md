@@ -28,6 +28,14 @@ an `[Unreleased]` section that still holds only the empty `### Added` /
 
 ### Changed
 
+### Fixed
+
+## [0.2.5] - 2026-10-02
+
+### Added
+
+### Changed
+
 - `README.md` "Documentation" section is now "Links", with a GitHub
   Project link.
 
