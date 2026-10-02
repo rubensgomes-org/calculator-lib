@@ -26,6 +26,14 @@ an `[Unreleased]` section that still holds only the empty `### Added` /
 
 ### Added
 
+### Changed
+
+### Fixed
+
+## [0.2.4] - 2026-10-02
+
+### Added
+
 - README "Uninstall" section
 
 ### Changed
