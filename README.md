@@ -1,11 +1,10 @@
 # Calculator Library
 
-[![Python](https://img.shields.io/badge/Python-3.14%2B-0969da?logo=python)](https://www.python.org/downloads/release/python-3147/)
-[![Poetry](https://img.shields.io/badge/Poetry-2.5%2B-0969da?logo=poetry)](https://python-poetry.org/)
+[![python](https://img.shields.io/badge/python-3.14%2B-0969da?logo=python)](https://www.python.org/downloads/release/python-3147/)
+[![poetry](https://img.shields.io/badge/poetry-2.5%2B-0969da?logo=poetry)](https://python-poetry.org/)
 [![GitHub](https://img.shields.io/badge/GitHub-Actions-0969da?logo=github+actions)](https://github.com/features/actions)
-[![AI Assisted](https://img.shields.io/badge/AI%20Assisted-Development-d29922)](https://github.com/rubensgomes-org/calculator-lib/blob/main/AI_DISCLAIMER.md)
-[![License](https://img.shields.io/badge/License-MIT-0969da)](https://github.com/rubensgomes-org/calculator-lib/blob/main/LICENSE)
-
+[![AI](https://img.shields.io/badge/AI-Assisted-d29922?logo=claude+code)](https://github.com/rubensgomes-org/calculator-lib/blob/main/AI_DISCLAIMER.md)
+[![license](https://img.shields.io/badge/license-MIT-1a7f37)](https://github.com/rubensgomes-org/calculator-lib/blob/main/LICENSE)
 
 A Python calculator library providing stateless arithmetic, power/root, modulo,
 rounding, and logarithmic/exponential operations.
@@ -30,28 +29,29 @@ tools. For details on usage, limits, and review practices, please see the
 
 ## Prerequisites
 
-- python 3.14+
+- Python 3.14+
 - pip
 
 ## Installation
 
-1. Install in `pip` default installation folder
+1. Install using `pip`
 
 ```bash
 pip install calculator-lib-rubens
 ```
 
-2. Install in the Python user install directory
-
-```bash
-pip --no-cache-dir install -U --user calculator-lib-rubens
-```
-
-3. Confirm the installed version matches the latest GitHub release at
+2. Confirm the installed version matches the latest GitHub release at
    [calculator-lib/releases](https://github.com/rubensgomes-org/calculator-lib/releases)
 
 ```bash
 pip show calculator-lib-rubens
+```
+
+## Uninstall
+
+```bash
+pip uninstall calculator-lib-rubens
+pip cache purge
 ```
 
 ## Quick Start
@@ -142,6 +142,10 @@ All methods validate their inputs and raise `ValueError` with descriptive
 messages for invalid operations:
 
 ```python
+from calculator_lib import Calculator
+
+calc = Calculator()
+
 calc.divide(10, 0)  # ValueError: Cannot divide by zero
 calc.sqrt(-1)  # ValueError: Cannot take square root of a negative number
 calc.log10(0)  # ValueError: Cannot take logarithm of a non-positive number
@@ -157,7 +161,7 @@ calc.modulo(10, 0)  # ValueError: Cannot modulo by zero
 
 ## License
 
-The project is licensed under
+This project is licensed under the
 [MIT License](https://github.com/rubensgomes-org/calculator-lib/blob/main/LICENSE).
 
 ---

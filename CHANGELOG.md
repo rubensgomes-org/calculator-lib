@@ -26,9 +26,16 @@ an `[Unreleased]` section that still holds only the empty `### Added` /
 
 ### Added
 
+- README "Uninstall" section
+
 ### Changed
 
+- README badges restyled
+- README installation steps reduced to a single `pip install`
+
 ### Fixed
+
+- README "Error Handling" example is now self-contained
 
 ## [0.2.3] - 2026-10-02
 
